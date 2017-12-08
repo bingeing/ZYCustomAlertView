@@ -15,6 +15,9 @@
 		1C24A6F91FDA5EAC0039E9D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C24A6F81FDA5EAC0039E9D9 /* main.m */; };
 		1C24A7031FDA5EAC0039E9D9 /* CustomAlertViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C24A7021FDA5EAC0039E9D9 /* CustomAlertViewDemoTests.m */; };
 		1C24A70E1FDA5EAD0039E9D9 /* CustomAlertViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C24A70D1FDA5EAD0039E9D9 /* CustomAlertViewDemoUITests.m */; };
+		1C2743711FDA7DDB00564AFE /* ZYCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C27436E1FDA7DDB00564AFE /* ZYCustomViewController.m */; };
+		1C2743721FDA7DDB00564AFE /* ZYCustomAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C27436F1FDA7DDB00564AFE /* ZYCustomAlertManager.m */; };
+		9C6AD26BA11699B2E4C7B116 /* libPods-CustomAlertViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DC14DFDF9AC7D3CD3D426A /* libPods-CustomAlertViewDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05DC14DFDF9AC7D3CD3D426A /* libPods-CustomAlertViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CustomAlertViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C24A6E61FDA5EAC0039E9D9 /* CustomAlertViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomAlertViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C24A6E91FDA5EAC0039E9D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1C24A6EA1FDA5EAC0039E9D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,12 @@
 		1C24A7091FDA5EAD0039E9D9 /* CustomAlertViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomAlertViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C24A70D1FDA5EAD0039E9D9 /* CustomAlertViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomAlertViewDemoUITests.m; sourceTree = "<group>"; };
 		1C24A70F1FDA5EAD0039E9D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C27436D1FDA7DDB00564AFE /* ZYCustomAlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCustomAlertManager.h; sourceTree = "<group>"; };
+		1C27436E1FDA7DDB00564AFE /* ZYCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCustomViewController.m; sourceTree = "<group>"; };
+		1C27436F1FDA7DDB00564AFE /* ZYCustomAlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCustomAlertManager.m; sourceTree = "<group>"; };
+		1C2743701FDA7DDB00564AFE /* ZYCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCustomViewController.h; sourceTree = "<group>"; };
+		85A2676CBB0E7E545E98526D /* Pods-CustomAlertViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAlertViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomAlertViewDemo/Pods-CustomAlertViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B16AFAB88B14BF8E03CDB0D2 /* Pods-CustomAlertViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAlertViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomAlertViewDemo/Pods-CustomAlertViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6AD26BA11699B2E4C7B116 /* libPods-CustomAlertViewDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,8 @@
 				1C24A7011FDA5EAC0039E9D9 /* CustomAlertViewDemoTests */,
 				1C24A70C1FDA5EAD0039E9D9 /* CustomAlertViewDemoUITests */,
 				1C24A6E71FDA5EAC0039E9D9 /* Products */,
+				4E63ED962B591CA18FC835C7 /* Pods */,
+				6476646BE0A7BCB778D4B42F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +114,7 @@
 		1C24A6E81FDA5EAC0039E9D9 /* CustomAlertViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1C27436C1FDA7DDB00564AFE /* ZYCustomAlertView */,
 				1C24A6E91FDA5EAC0039E9D9 /* AppDelegate.h */,
 				1C24A6EA1FDA5EAC0039E9D9 /* AppDelegate.m */,
 				1C24A6EC1FDA5EAC0039E9D9 /* ViewController.h */,
@@ -132,6 +146,34 @@
 			path = CustomAlertViewDemoUITests;
 			sourceTree = "<group>";
 		};
+		1C27436C1FDA7DDB00564AFE /* ZYCustomAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				1C27436D1FDA7DDB00564AFE /* ZYCustomAlertManager.h */,
+				1C27436E1FDA7DDB00564AFE /* ZYCustomViewController.m */,
+				1C27436F1FDA7DDB00564AFE /* ZYCustomAlertManager.m */,
+				1C2743701FDA7DDB00564AFE /* ZYCustomViewController.h */,
+			);
+			path = ZYCustomAlertView;
+			sourceTree = "<group>";
+		};
+		4E63ED962B591CA18FC835C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85A2676CBB0E7E545E98526D /* Pods-CustomAlertViewDemo.debug.xcconfig */,
+				B16AFAB88B14BF8E03CDB0D2 /* Pods-CustomAlertViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6476646BE0A7BCB778D4B42F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05DC14DFDF9AC7D3CD3D426A /* libPods-CustomAlertViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C24A7121FDA5EAD0039E9D9 /* Build configuration list for PBXNativeTarget "CustomAlertViewDemo" */;
 			buildPhases = (
+				492B01FF212B3F8BBF01912A /* [CP] Check Pods Manifest.lock */,
 				1C24A6E21FDA5EAC0039E9D9 /* Sources */,
 				1C24A6E31FDA5EAC0039E9D9 /* Frameworks */,
 				1C24A6E41FDA5EAC0039E9D9 /* Resources */,
+				DF9C571C2703CBC17F1AE0C2 /* [CP] Embed Pods Frameworks */,
+				2EB52779B7D6037C0F592F6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,11 +305,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2EB52779B7D6037C0F592F6B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomAlertViewDemo/Pods-CustomAlertViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		492B01FF212B3F8BBF01912A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomAlertViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF9C571C2703CBC17F1AE0C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomAlertViewDemo/Pods-CustomAlertViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C24A6E21FDA5EAC0039E9D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C2743711FDA7DDB00564AFE /* ZYCustomViewController.m in Sources */,
+				1C2743721FDA7DDB00564AFE /* ZYCustomAlertManager.m in Sources */,
 				1C24A6EE1FDA5EAC0039E9D9 /* ViewController.m in Sources */,
 				1C24A6F91FDA5EAC0039E9D9 /* main.m in Sources */,
 				1C24A6EB1FDA5EAC0039E9D9 /* AppDelegate.m in Sources */,
@@ -428,6 +526,7 @@
 		};
 		1C24A7131FDA5EAD0039E9D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85A2676CBB0E7E545E98526D /* Pods-CustomAlertViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +540,7 @@
 		};
 		1C24A7141FDA5EAD0039E9D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B16AFAB88B14BF8E03CDB0D2 /* Pods-CustomAlertViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

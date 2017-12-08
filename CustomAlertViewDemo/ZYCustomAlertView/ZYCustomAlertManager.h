@@ -55,7 +55,10 @@ typedef NS_ENUM(NSUInteger, ZYCustomAlertType) {
 - (void)externalCustomUIWithButtonTitleArray : (NSArray <NSString *> *)buttonTitleArray
                                 buttonClicked:(void (^) (NSInteger index))buttonClicked;
 /**
- @param 内容 弹框内容
+ @param content 弹框内容
+ @param buttonTitleArray 按钮标题数组
+ @param buttonClicked 按钮点击事件
+ 
  */
 
 - (void)prepareUIWithContentText:(NSString *)content
@@ -89,7 +92,7 @@ typedef NS_ENUM(NSUInteger, ZYCustomAlertType) {
 /**
  @param title 标题 ，如未为空，则不显示
  @param message 内容
- @param buttonTitleArray 按钮标题数组  如@[@"确定",@"取消"]，则"确定"按钮在右侧，"取消"按钮在左侧
+ @param btnTitleArray 按钮标题数组  如@[@"确定",@"取消"]，则"确定"按钮在右侧，"取消"按钮在左侧
  */
 - (void)showWithTitle:(NSString*)title
               message:(NSString * )message

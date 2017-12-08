@@ -56,7 +56,7 @@ typedef NS_ENUM(NSUInteger, ZYCustomViewType) {
 - (void)prepareExternalCustomUI;
 
 /**
- @param 内容 弹框内容
+ @param content 弹框内容
  */
 - (void)prepareUIWithContentText:(NSString *)content;
 

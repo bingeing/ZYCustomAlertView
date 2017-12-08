@@ -17,7 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     _titleArray = @[@"弹框",@"弹框1",@"弹框2",@"弹框3",@"弹框4",@"弹框5",@"弹框6"];
     
     UITableView *demoTable = [[UITableView alloc] initWithFrame:self.view.frame];

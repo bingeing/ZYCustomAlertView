@@ -39,9 +39,9 @@ typedef NS_ENUM(NSUInteger, ZYCustomViewType) {
 //内容字号
 @property (nonatomic,strong) UIFont *contentTextFont;
 //title富文本修饰的内容
-@property(nonatomic,copy)   NSAttributedString *titleAttributedText;
+@property(nonatomic,strong)   NSAttributedString *titleAttributedText;
 //content富文本修饰的内容
-@property(nonatomic,copy)   NSAttributedString *contentAttributedText;
+@property(nonatomic,strong)   NSAttributedString *contentAttributedText;
 
 //按钮字体颜色
 @property (nonatomic,strong) UIColor *btnTitleColor;

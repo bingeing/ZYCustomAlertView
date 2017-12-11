@@ -6,19 +6,19 @@
 //  Copyright © 2017年 zhaoying. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+//#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, ZYCustomAlertType) {
     AlertViewNonCustomization = 0,         // 默认，非定制
-    AlertViewCustomization = 1,         // 外部定制
+    AlertViewCustomization = 1         // 外部定制
 };
 
 @interface ZYCustomAlertManager  : UIView
 + (instancetype)shareInstance ;
 
-/** 保存当前的视图控制器，用来dismiss */
-@property (nonatomic, strong)UIViewController *controller;
+///** 保存当前的视图控制器，用来dismiss */
+//@property (nonatomic, strong)UIViewController *controller;
 
 // 容器
 @property (nonatomic, strong) UIView *containerView;
@@ -40,9 +40,9 @@ typedef NS_ENUM(NSUInteger, ZYCustomAlertType) {
 //内容字号
 @property (nonatomic,strong) UIFont *contentTextFont;
 //title富文本修饰的内容
-@property(nonatomic,copy)   NSAttributedString *titleAttributedText;
+@property(nonatomic,strong)   NSAttributedString *titleAttributedText;
 //content富文本修饰的内容
-@property(nonatomic,copy)   NSAttributedString *contentAttributedText;
+@property(nonatomic,strong)   NSAttributedString *contentAttributedText;
 
 //按钮字体颜色
 @property (nonatomic,strong) UIColor *btnTitleColor;
